@@ -21,6 +21,6 @@ from simple import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("about-us/",views.aboutus),
+    # path("about-us/",views.aboutus),
     path("",views.home,name="home page"),
 ]

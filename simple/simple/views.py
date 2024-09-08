@@ -5,6 +5,8 @@ def home(request):
          'name':"rafik",
          'phone':7028352298,
          'clist':[1,5,4,6,8,9,6,3]
+        #    'clist':[]
+
          }
 
     return render(request,"index.html",data)

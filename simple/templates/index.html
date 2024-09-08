@@ -4,11 +4,15 @@
 <body>
     <div>{{name}}</div>
     <div>{{phone}}</div>
-
+     {% if clist|length > 0 %}
         {% for i in clist %}
-                <div>hello</div>
+             {%if i > 0%}
+                <div>{{i}}</div>
+             {%endif%}
         {%endfor%}
-
+     {%else%}
+      no data
+{% endif %}
 </body>
   
 </html>
